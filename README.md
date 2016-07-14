@@ -1,4 +1,12 @@
-admincrud
-=========
+Demo AdminCrudBundle
+====================
 
-A Symfony project created on July 14, 2016, 5:08 pm.
+[AdminCrudBundle](https://github.com/MWSimple/AdminCrudBundle)
+
+## Author
+Gonzalo Alonso - gonkpo@gmail.com
+
+![Argentina](http://www.messentools.com/images/emoticones/banderas/MessenTools.com-Flag-of-Argentina.png "Argentina")
+
+## Soporte
+[Tecspro](http://www.tecspro.com.ar)
