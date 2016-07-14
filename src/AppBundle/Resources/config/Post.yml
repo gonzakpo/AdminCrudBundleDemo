@@ -58,12 +58,12 @@ fieldsindex:
         type: 'datetime'
         date: 'Y-m-d H:i:s'
         export: true
-    a.dechatiempoz:
-        label: 'Dechatiempoz'
-        name: 'Dechatiempoz'
-        type: 'datetimetz'
-        date: 'Y-m-d H:i:s'
-        export: true
+    # a.dechatiempoz:
+    #     label: 'Dechatiempoz'
+    #     name: 'Dechatiempoz'
+    #     type: 'datetimetz'
+    #     date: 'Y-m-d H:i:s'
+    #     export: true
     a.fecha:
         label: 'Fecha'
         name: 'Fecha'

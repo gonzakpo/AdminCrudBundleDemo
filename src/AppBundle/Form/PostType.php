@@ -16,12 +16,36 @@ class PostType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('booleano')
-            ->add('entero')
-            ->add('smallEntero')
-            ->add('bigEntero')
-            ->add('cadena')
-            ->add('texto', CKEditorType::class)
+            ->add('booleano', null, [
+                'attr' => [
+                    'col' => 'col-md-3',
+                ],
+            ])
+            ->add('entero', null, [
+                'attr' => [
+                    'col' => 'col-md-3',
+                ],
+            ])
+            ->add('smallEntero', null, [
+                'attr' => [
+                    'col' => 'col-md-3',
+                ],
+            ])
+            ->add('bigEntero', null, [
+                'attr' => [
+                    'col' => 'col-md-3',
+                ],
+            ])
+            ->add('cadena', null, [
+                'attr' => [
+                    'col' => 'col-md-6',
+                ],
+            ])
+            ->add('texto', CKEditorType::class, [
+                'attr' => [
+                    'col' => 'col-md-12',
+                ],
+            ])
             ->add('fechatiempo', \SC\DatetimepickerBundle\Form\Type\DatetimeType::class, array('pickerOptions' =>
                 array(
                     'format'    => 'mm/dd/yyyy hh:ii',
@@ -29,7 +53,11 @@ class PostType extends AbstractType
                     'minView'   => 'hour',
                     'maxView'   => 'decade',
                     'todayBtn'  => true,
-                )))
+                ),
+                'attr' => [
+                    'col' => 'col-md-3',
+                ],
+            ))
             ->add('dechatiempoz', \SC\DatetimepickerBundle\Form\Type\DatetimeType::class, array('pickerOptions' =>
                 array(
                     'format'    => 'mm/dd/yyyy hh:ii',
@@ -37,7 +65,11 @@ class PostType extends AbstractType
                     'minView'   => 'hour',
                     'maxView'   => 'decade',
                     'todayBtn'  => true,
-                )))
+                ),
+                'attr' => [
+                    'col' => 'col-md-3',
+                ],
+            ))
             ->add('fecha', \SC\DatetimepickerBundle\Form\Type\DatetimeType::class, array('pickerOptions' =>
                 array(
                     'format'    => 'mm/dd/yyyy',
@@ -45,16 +77,32 @@ class PostType extends AbstractType
                     'minView'   => 'month',
                     'maxView'   => 'decade',
                     'todayBtn'  => true,
-                )))
+                ),
+                'attr' => [
+                    'col' => 'col-md-3',
+                ],
+            ))
             ->add('tiempo', \SC\DatetimepickerBundle\Form\Type\DatetimeType::class, array('pickerOptions' =>
                 array(
                     'format'    => 'hh:ii',
                     'startView' => 'day',
                     'minView'   => 'hour',
                     'maxView'   => 'day',
-                )))
-            ->add('numerodecimal')
-            ->add('numeroconcoma')
+                ),
+                'attr' => [
+                    'col' => 'col-md-3',
+                ],
+            ))
+            ->add('numerodecimal', null, [
+                'attr' => [
+                    'col' => 'col-md-2',
+                ],
+            ])
+            ->add('numeroconcoma', null, [
+                'attr' => [
+                    'col' => 'col-md-4',
+                ],
+            ])
         ;
     }
     
